@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #edebfa;
+
+}
+
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-area{
+    padding: 2rem 5rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    
+}
+.search-title{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.search-title h3{
+    font-size: 2rem;
+}
+.search-title input{
+    height: 2rem;
+    border-radius: .3rem;
+    outline: none;
+    border: solid 1.5px #7065F0;
+}
+
+.filter-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    
+}
+.filter-area  .label{
+    color: #6a5bf1;
+}
+.filter-drop, .filter-drop>option{
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: inherit;
+    margin-left: 0;
+    cursor: pointer;
+}
+.filter-drop::placeholder{
+    color: black;
+}
+.filter-drop:focus::placeholder{
+    color: #888888;
+}
+.filter-drop:hover{
+    color: #666666;
+}
+.filter-drop>option{
+    font-weight: 500 !important;
+}
+
+
+.vr {
+    width:1px;
+    height: 3rem;
+    background-color: #7065F0;
+}
+.filter-area > div:not(.btSearch,.vr){
+    display: flex;
+    width: 15%;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.75rem;
+    
+}
+.filter-area > p{
+    line-height: .5rem;
+}
+.btSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 1rem;
+    
+}
+.searchBt{
+    margin: 0 0.5rem;
+    width: 7rem;
+    height: 2.4rem;
+    border-radius: 0.3rem;
+    border: solid 1.5px #7065F0;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    margin: auto;
+    background-color: #7065F0;
+
+}
+.searchBt:hover{
+    background-color: #5345ed;
+}
+.view-area{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cards{
+    margin-top: 2rem;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-items: flex-start;
+    
+    
+    
+}
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    width: 30%;
+    margin-top: 1rem;
+    min-width: 300px;
+    max-width: 300px;
+
+}
+.card-image{
+    flex: 1;
+}
+.card-description{
+    flex:1;
+    display: flex;
+    white-space: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem;
+    padding-bottom: .25rem;
+    line-height: 2rem;
+    
+}
+
+.item-price{
+    color: #7065F0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-image{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.line-break hr{
+    width: 90%;
+    color: #7065F0;
+    height:1px;
+    border-width:0;
+    background-color:#7065F0;
+    margin: auto;
+}
+.item-particulars{
+    display: flex ; 
+    padding-top: .5rem;
+    flex-direction: row ;
+    justify-content: space-evenly ;
+    padding-bottom: 00.5rem;
+}
+sup {
+    line-height: 80%;
+}
+.item-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.item-address,.price-section,.item-particulars{
+    color: #6a5bf1;
+}
+
